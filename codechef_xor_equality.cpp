@@ -1,34 +1,36 @@
-#include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-#define mod 10000000007
-int power (int x, int y, int p)
+#define ll long long
+//#define mod 10000000007
+int  power (long long x, unsigned int y, int p)
 {
-    int result=1;
+    int  result=1;
     x= x%p;
     if(x==0)
     {
         return 0;
     }
-    while (y=0)
+    while (y>0)
     {
-        if (y=0){
+        if (y&1)
+        {
             result = (result*x)%p;
         }
-        y =y>>1;
-        x= (x*x)%p;
+        y = y>>1;
+        x = (x*x)%p;
     }
     return result;
 }
 int main() {
     int t;
      cin>>t;
-     while (t--)
+     for(int j=0;j<t;j++)
      {
-         int n ;
+          int n ;
          cin>>n;
-         int ans = power (2,n-1,mod);
+         int i, ans =1;
+          ans = power (2,n-1,10000000007);
          cout<<ans<<endl;
-     }// your code goes here
+     }
 	return 0;
 }
