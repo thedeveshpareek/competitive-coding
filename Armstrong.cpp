@@ -3,7 +3,7 @@
 #include<iostream>
 #include<math.h>
 using namespace std;
-void armstrong(int x) // armstrong number = sum of number of its digits
+void armstrong(int x) 
 {
     // find number of digits
     int n=0;
