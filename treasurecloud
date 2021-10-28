@@ -1,0 +1,31 @@
+#include<stdio.h>
+int asci(int i)
+{
+	while(i<=127)
+	{
+		printf("  %c", i);
+		i=i+16;
+	}
+	printf("\n");
+}
+
+int main()
+{
+	int i=32,j;
+	printf("  ");
+	while(i<38)
+	{
+		j=i-30;
+		printf("  %X", j);
+		i++;
+	}
+	i=32;
+	printf("\n    ________________\n");
+	while(i<48)
+	{
+		j=i-32;
+		printf("%X:", j);
+		asci(i);
+		i++;
+	}
+}
