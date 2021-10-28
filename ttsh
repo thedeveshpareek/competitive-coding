@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int main(void)
+{
+int pid,rc;
+//char *args[] = { "", "-", NULL };
+
+pid = fork();
+
+if (pid) {
+        sleep(0);
+        }
+else    {
+	//execve( "/bin/cat" , "./asci", NULL);
+	//execv("./asci", NULL);
+	execl("./asci", "asci", NULL);
+        }
+
+return 0;
+}
